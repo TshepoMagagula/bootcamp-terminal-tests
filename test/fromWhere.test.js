@@ -1,4 +1,5 @@
-var fromWhere = require('../fromWhere.js')
+import assert from "assert";
+import fromWhere from "../fromWhere.js";
 
 describe('Test my fromWhere function' , function(){
     it('It should return "Bellville" when called with "CY 567489"' , function(){

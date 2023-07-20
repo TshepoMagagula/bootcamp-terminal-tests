@@ -1,4 +1,5 @@
-var greet = require('../greet.js');
+import assert from "assert";
+import greet from "../greet.js";
 
 describe('Test my greet function' , function(){
     it('It should return "Hello, Bob" when called with "Bob"' , function(){

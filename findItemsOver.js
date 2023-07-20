@@ -32,7 +32,7 @@ var results3 = [
     {name : 'apples', qty : 37}
 ];
 
-module.exports = function findItemsOver(list, threshold){
+export default function findItemsOver(list, threshold){
     var itemsOver = [];
     for(let i=0; i<list.length; i++){
     const listItem = list[i];

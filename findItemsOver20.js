@@ -32,7 +32,7 @@ var results3 = [
     {name : 'apples', qty : 37}
 ];
 
-module.exports = function findItemsOver20(list){
+export default function findItemsOver20(list){
     var itemsOver20 = [];
     for(let i=0; i<list.length; i++){
     const listItem = list[i];

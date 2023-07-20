@@ -1,4 +1,4 @@
-module.exports = function mostProfitableDepartment(businessProfits){
+export default function mostProfitableDepartment(businessProfits){
     var departsAndProfits = {};
     for(let i = 0; i < businessProfits.length; i++){
       let currentObj = businessProfits[i];
@@ -22,29 +22,6 @@ module.exports = function mostProfitableDepartment(businessProfits){
     }
     return maxProfitDepart;
   }
+
   
   
-module.exports = function mostProfitableDay(businessProfits){
-   var daysAndProfits = {};
-    for(let i = 0; i < businessProfits.length; i++){
-      let currentObj = businessProfits[i];
-      daysAndProfits[currentObj.day] = 0;  
-    }
-    
-    for(let i = 0; i < businessProfits.length; i++){
-    let currentObj = businessProfits[i];
-      let currDayProfit = daysAndProfits[currentObj.day];
-      currDayProfit += currentObj.sales;
-      daysAndProfits[currentObj.day] = currDayProfit;
-    }
-  
-    let maxProfit = 0;
-    let maxProfitDay = "";
-    for(let day in daysAndProfits){
-      if(maxProfit < daysAndProfits[day]){
-        maxProfit = daysAndProfits[day];
-        maxProfitDay = day;
-      }
-    }
-    return maxProfitDay;
-  }

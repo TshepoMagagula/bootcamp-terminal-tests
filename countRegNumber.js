@@ -1,4 +1,4 @@
-module.exports = function countRegNumber(regNo){
+export default function countRegNumber(regNo){
     const regNumbersArr = [];
   regNumbersArr.push(regNo.split(","));
    // return regNumbersArr[0].length

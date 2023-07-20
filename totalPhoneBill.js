@@ -1,4 +1,4 @@
-module.exports = function totalPhoneBill(CustActions){
+export default function totalPhoneBill(CustActions){
     const ArrCustActions = CustActions.split(",");
       let totalBill = 0;
       for(let i = 0; i < ArrCustActions.length; i++ ){

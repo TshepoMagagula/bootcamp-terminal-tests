@@ -1,4 +1,5 @@
-var countAllFromTown = require('../countAllFromTown.js');
+import assert from "assert";
+import countAllFromTown from "../countAllFromTown.js";
 
 describe('Test my countAllFromTown function' , function(){
     it('It should return "3" when called with "CL 124,CY 567,CL 345, CJ 456,CL 341", "CL"' , function(){

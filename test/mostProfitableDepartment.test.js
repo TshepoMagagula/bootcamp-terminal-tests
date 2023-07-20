@@ -1,3 +1,6 @@
+import assert from "assert";
+import mostProfitableDepartment from "../mostProfitableDepartment.js";
+
 var salesData = [
     {department : 'hardware', sales : 4500, day : 'Monday'},
     {department : 'outdoor', sales : 1500, day : 'Monday'},
@@ -38,8 +41,6 @@ var salesData2 = [
     {department : 'carpentry', sales : 8009, day : 'Wednesday'},
 ];
 
-var mostProfitableDepartment = require('../mostProfitableDepartment.js');
-
 describe('Test my mostProfitableDepartment function' , function(){
     it('It should return "outdoor" when called with "salesData"' , function(){
         assert.equal('outdoor', mostProfitableDepartment(salesData), "Most profitable department is 'outdoor' for dataset 1");
@@ -47,14 +48,6 @@ describe('Test my mostProfitableDepartment function' , function(){
 
     it('It should return "electronics" when called with "salesData2"' , function(){
         assert.equal('electronics', mostProfitableDepartment(salesData2), "Most profitable department is 'electronics' for dataset 2");
-    });
-
-    it('It should return "Thursday" when called with "salesData"' , function(){
-        assert.equal('Thursday', mostProfitableDay(salesData), "Most profitable day is 'Thursday' for dataset 1");
-    });
-
-    it('It should return "Wednesday" when called with "salesData2"' , function(){
-        assert.equal('Wednesday', mostProfitableDay(salesData2), "Most profitable day is 'Wednesday' for dataset 2");
     });
 
 });

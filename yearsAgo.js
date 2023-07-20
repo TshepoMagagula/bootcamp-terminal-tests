@@ -1,4 +1,4 @@
-module.exports = function yearsAgo(year){
+export default function yearsAgo(year){
     const date = new Date();
     return (date.getFullYear() - year);
 }

@@ -1,4 +1,5 @@
-var totalPhoneBill = require('../totalPhoneBill.js');
+import assert from "assert";
+import totalPhoneBill from "../totalPhoneBill.js";
 
 describe('Test my totalPhoneBill function' , function(){
     it('It should return "R7.45" when called with "call, sms, call, sms, sms"' , function(){

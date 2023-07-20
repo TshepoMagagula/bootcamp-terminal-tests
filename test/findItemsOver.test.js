@@ -1,3 +1,6 @@
+import assert from "assert";
+import findItemsOver from "../findItemsOver.js";
+
 var itemList = [
     {name : 'apples', qty : 10},
     {name : 'pears', qty : 37},
@@ -31,8 +34,6 @@ var results3 = [
     {name : 'bananas', qty : 23},
     {name : 'apples', qty : 37}
 ];
-
-var findItemsOver = require('../findItemsOver.test');
 
 describe('Test my findItemsOver function' , function(){
     it('It should return "[{name : "pears", qty : 37},{name : "bananas", qty : 27},]" when called with "itemList", 20 ' , function(){

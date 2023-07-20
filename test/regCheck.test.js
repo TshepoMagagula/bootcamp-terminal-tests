@@ -1,5 +1,5 @@
-var regCheck = require('../regCheck.js');
-
+import assert from "assert";
+import regCheck from "../regCheck.js";
 
 describe('Test my regCheck function' , function(){
     it('It should return "true" when called with "DC 55 YU GP", "GP"' , function(){

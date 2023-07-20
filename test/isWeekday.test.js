@@ -1,4 +1,5 @@
-var isWeekday = require('../isWeekday.js');
+import assert from "assert";
+import isWeekday from "../isWeekday.js";
 
 describe('Test my isWeekday function' , function(){
     it('It should return "False" when called with "Saturday"' , function(){

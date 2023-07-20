@@ -1,4 +1,5 @@
-var yearsAgo = require('../yearsAgo.js');
+import assert from "assert";
+import yearsAgo from "../yearsAgo.js";
 
 describe('Test my YearsAgo function' , function(){
     it('It should return (new Date().getFullYear() - 1976) when called with "1976"' , function(){

@@ -1,4 +1,4 @@
-module.exports = function countAllFromTown(regNums, locCode){
+export default function countAllFromTown(regNums, locCode){
     const ArrRegNums = regNums.split(",");
     const regNumsForTown = [];
     for(let i = 0; i < ArrRegNums.length; i++){

@@ -1,4 +1,5 @@
-var transportFee = require('../transportFee.js');
+import assert from "assert";
+import transportFee from "../transportFee.js";
 
 describe('Test my transportFee function' , function(){
     it('It should return "R20" when called with "morning"' , function(){
